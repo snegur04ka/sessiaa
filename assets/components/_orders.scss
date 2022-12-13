@@ -1,0 +1,90 @@
+.container__orders {
+    max-width: 1441px;
+    margin: 0 auto;
+
+}
+.dop {
+    width: 237.17px;
+    height: 24.87px;    
+}
+.orders {
+    &__mobile {
+        display: none;
+    }
+    position: relative;
+    margin-bottom: 120px;
+    &__bg {
+        background: $text-aqua;
+        height: 154px;
+        width: 100%;
+        position: absolute;
+        top: 76px;
+    }
+    &__bcg {
+        background: $text-aqua;
+        height: 154px;
+        width: 100%;
+        position: absolute;
+        top: 481px;
+    }
+    &__content, &__contents {
+        @include flex(space-between, center, nowrap);
+        margin: 0 42px 0 43px;
+    }
+    &__contents {
+        margin-top: 83px;
+    }
+    &__item {
+        width: 289px;
+        height: 305px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%); 
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.2s;
+        @include flex(center, center, wrap);
+        position: relative;
+        margin: 0 25px 0 25px;
+        box-shadow: 0px 1px 1px rgba(30, 149, 155, 0.5);
+    }
+    &__item:hover {
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+        background: linear-gradient(180deg, #e5e5e5 0%, #F7F9FD 100%);
+    }
+    &__img {
+        background: $text-aqua;
+        width: 182px;
+        height: 182px;
+        border-radius: 100px;
+        position: absolute;
+        top: -43px;
+        @include flex(center, center, nowrap);
+    }
+    &__title {
+        @include font(700, 24px, $text-aqua);
+        text-transform: uppercase;
+        text-align: center;
+        padding: 171px 0 27px 0;
+        &--mob {
+            @include font(700, 24px, $text-aqua);
+            text-transform: uppercase;
+            text-align: center;
+            padding: 152px 0 16px 0;
+        }
+    }
+    &__btn {
+        @include font(700, 14px, white);
+        text-align: center;
+        text-transform: uppercase;
+        background: $bg-rosa;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        transition: 0.5s;
+        padding: 24px 65px 23px 66px;
+        margin-bottom: 20px;
+    }
+    &__btn:hover {
+        background: #fe1a40;
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    }
+}

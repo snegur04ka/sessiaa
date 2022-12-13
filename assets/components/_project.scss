@@ -1,0 +1,97 @@
+.project {
+    &__swiper {
+        display: none;
+    }
+    &__title {
+        @include font(700, 32px, $text-aqua);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 75px;
+        &--item {
+            @include font(700, 16px, $text-aqua);
+            text-align: center;
+        }
+    }
+    &__data--one,
+    &__data--two,
+    &__data--three,
+    &__data--vour,
+    &__data--five,
+    &__data--six {
+        @include font(400, 14px, $text-gray);
+        text-align: center;
+        line-height: 17px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    &__data--one {
+        margin-right: 44px;
+        margin-left: 44px;
+    }
+
+    &__data--two {
+        margin-right: 61px;
+        margin-left: 45px;
+    }
+
+    &__data--three {
+        margin-right: 54px;
+        margin-left: 45px;
+    }
+
+    &__data--vour {
+        margin-right: 42px;
+        margin-left: 45px;
+    }
+
+    &__data--five {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    &__data--six {
+        margin-right: 39px;
+        margin-left: 45px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 19px;
+    }
+    &__top, &__bottom {
+        @include flex(space-between, center, nowrap)
+    }
+    &__cell {
+        width: 320px;
+        height: 320px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    &__cell:hover {
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    }
+    &__bottom {
+        margin: 46px 0 44px 0;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        padding: 25px 63px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        @include font(700, 16px, $text-aqua);
+        text-transform: uppercase;
+        margin-bottom: 145px;
+    }
+    &__button:hover {
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    }
+}

@@ -1,0 +1,11 @@
+.icons {
+    background: $text-aqua;
+    max-width: 100%;
+    &__flex {
+        @include flex(space-between, center, nowrap);
+        padding: 17px 0 18.56px 0;
+    }
+    &__swiper {
+        display: none;
+    }
+}

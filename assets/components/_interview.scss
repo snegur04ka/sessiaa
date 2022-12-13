@@ -1,0 +1,39 @@
+.interview {
+    &__mobile {
+        display: none;
+    }
+    &__content {
+        @include flex(space-around, center, nowrap);
+        margin-bottom: 120px;
+    }
+    &__right {
+        margin-left: 105px;
+    }
+    &__title {
+        @include font(700, 32px, $text-aqua);
+        width: 371px;
+        height: 120px;
+        text-transform: uppercase;
+    }
+    &__data {
+        width: 310px;
+        height: 49px;
+        line-height: 16px;
+        @include font(400, 14px, $text-gray);
+        margin: 27px 0 44px 0;
+    }
+    &__btn {
+        padding: 25px 21px;
+        border-radius: 20px;
+        @include font(700, 16px, white);
+        cursor: pointer;
+        transition: 0.5s;
+        background: $bg-rosa;
+        border: none;
+        text-transform: uppercase;
+    }
+    &__btn:hover {
+        background: #fe1a40;
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    }
+}

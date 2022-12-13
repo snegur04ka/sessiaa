@@ -1,0 +1,45 @@
+.header {
+    &__content {
+        margin: 33px 0 55px 0;
+        color: $text-aqua;
+        @include flex(space-between, center, nowrap)
+    }
+    &__btn {
+        background: $bg-rosa;
+        border: none;
+        border-radius: 15px;
+        padding: 23px 40px;
+        @include font(700, 14px, white);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &__btn:hover {
+        background: #fe1a40;
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    }
+    &__right, &__list {
+        @include flex(space-between, center, nowrap)
+    }
+    &__list--item, &__list--tele {
+        margin-left: 65px;
+    }
+    &__list--tel {
+        margin: 0 58px 0 16px;
+        @include font(700, 16px, $text-aqua)
+    }
+    &__link {
+        color: $text-aqua;
+        transition: 0.5s;
+    }
+    &__link:hover {
+        text-shadow:0 0 10px #00f2ff;
+        color:  #00f2ff;
+    }
+    &__list--item {
+        transition: 0.5s;
+    }
+    &__list--item:hover {
+        box-shadow: 0px 5px 10px #0fc3cc;
+        border-radius: 100px;
+    }
+}

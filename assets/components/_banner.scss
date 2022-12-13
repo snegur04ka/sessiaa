@@ -1,0 +1,70 @@
+.banner {
+    background-image: url("./bcg.png");
+    &__content {
+        background: url();
+        @include flex(space-between, center, nowrap);
+        margin-left: 25px;
+        position: relative;
+    }
+    &__date {
+        width: 608px;
+        height: 40px;
+        @include font(700, 16px, $bg-rosa);
+        margin-top: 122px;
+
+    }
+    &__title {
+        @include font(700, 32px, $text-aqua);
+        width: 608px;
+        height: 160px;
+        text-transform: uppercase;
+        margin-bottom: 122px;
+
+    }
+    &__bottom {
+        background: rgb(255, 255, 255);
+        height: 190px;
+    }
+    &__circle {
+            &--one {
+                width: 87px;
+                height: 87px;
+                background: #1E959B;
+                opacity: 0.15;
+                border-radius: 100px;
+                position: absolute;
+                bottom: 15px;
+                left: -109px;
+            }
+            &--two {
+                // width: 98px;
+                // height: 98px;
+                // background: #1E959B;
+                // opacity: 0.5;
+                // border-radius: 100px;
+                position: absolute;
+                top: -35px;
+                left: -34px;
+            }
+            &--three {
+                // width: 174px;
+                // height: 174px;
+                // background: #1E959B;
+                // opacity: 0.5;
+                // border-radius: 100px;
+                position: absolute;
+                bottom: -15px;
+                left: 550px;
+            }
+            &--vour {
+                width: 82px;
+                height: 82px;
+                background: #1E959B;
+                opacity: 0.1;
+                border-radius: 100px;
+                position: absolute;
+                top: -23px;
+                right: -41px;
+            }
+    }
+}

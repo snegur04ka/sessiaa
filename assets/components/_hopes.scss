@@ -1,0 +1,31 @@
+.hopes {
+    &__content {
+        @include flex(space-between, center, nowrap);
+        margin: 120px 0 33px 0;
+    }
+    &__data {
+        margin-bottom: 19px;
+        @include font(400, 14px, $text-gray);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__img {
+        margin: 27px 57px 21px 58px;
+    }
+    &__item {
+        @include flex(center, center, wrap);
+        background: red;
+        width: 195px;
+        height: 164px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+        box-shadow: 0px 4px 4px rgba(30, 149, 155, 0.5);
+        border-radius: 25px;
+        cursor: default;
+    }
+    &__item:hover { 
+        box-shadow: inset 0px 4px 4px rgba(30, 149, 155, 0.5);
+    }
+    &__swiper {
+        display: none;
+    }
+}

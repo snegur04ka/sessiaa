@@ -1,0 +1,21 @@
+.application {
+    &__content {
+        @include flex(center, center, nowrap);
+        margin-bottom: 84.75px;
+    }
+    &__btn {
+        background: $bg-rosa;
+        border: none;
+        padding: 37px 57px 32px 57px;
+        border-radius: 20px;
+        @include font(700, 24px, white);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-left: 113.6px;
+    }
+    &__btn:hover {
+        box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+        background:#fe1a40;
+    }
+}
